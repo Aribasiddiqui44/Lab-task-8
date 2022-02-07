@@ -6,7 +6,32 @@ censored = message.replace("secret", "xxxxxx")
 print("message=", message,"\n", "length=", length,"\n", "count=", count,"\n", "censored=", censored)
 print()
 
+
+# lab 8 Qno.4
+
+first = "John"
+last = "Doe"
+street = "Main Street"
+number = "123"
+city = "Karachi"
+state = "Pakistan"
+zipcode = "09876"
+print(first + " " + last + "\n", number + " " + street, "\n" + city + ", " + state + ", " + zipcode)
+
+
+# lab 8 Qno.6
+
+def month(x, y):
+    print(y[x - 1:x])
+
+num = int(input("Enter any number in between 1 to 12"))
+abr = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"]
+month(num, abr)
+
+
+or 
 # LAB 8 QUESTION 6
+
 def month(n):
     a = "Jan"
     b = "Feb"

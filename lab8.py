@@ -52,8 +52,12 @@ print("\n")
     
 # CODE OF QUESTION 3:
 
-
-
+def even(x):
+    for i in range(2,x+1):
+        if(i%2==0)or(i%3==0):
+            print(i,end=" ")
+num=int(input("Enter any positive integer:"))
+print(even(num))
 
 
 
@@ -165,3 +169,13 @@ def month(n):
 
 x = int(input("Enter a month no.="))
 month(x)
+
+
+
+# LAB 8 QUESTION NO.7:
+
+def cheer(team):
+    print("How do you spell winner?","\n","I know ,I know!",team.upper()+"!","\n","And that is how you spell winner!","\n","Go",team,"!")
+
+name=input("Enter team name:")
+cheer(name)

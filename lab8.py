@@ -1,3 +1,207 @@
+LAB 7:
+QUESTION 1:
+
+1.	Use  inbuilt min and max functions to perform the task of getting the minimum and maximum 
+value of  in a list of tuples for a particular element position in a tuple.
+Sample  = [(2, 3), (4, 7), (8, 11), (3, 6)]
+
+CODE:
+Sample  = [(2, 3), (4, 7), (8, 11), (3, 6)]
+for i in Sample:
+    print("Maximun in",i,"is",max(i))
+    print("Minimum in",i,"is",min(i))
+    print()
+    
+OUTPUT:
+Maximun in (2, 3) is 3
+Minimum in (2, 3) is 2
+
+Maximun in (4, 7) is 7
+Minimum in (4, 7) is 4
+
+Maximun in (8, 11) is 11
+Minimum in (8, 11) is 8
+
+Maximun in (3, 6) is 6
+Minimum in (3, 6) is 3
+
+
+
+QUESTION 2:
+2.   A dartboard of radius 10 and the wall it is hanging on are represented using the two dimensional
+coordinate system, with the board’s center at coordinate (0; 0). Variables x and y store the x- and 
+y-coordinate of a dart hit. Write an expression using variables x and y that evaluates to True if the
+dart hits (is within) the dartboard, and evaluate the expression for these dart coordinates:
+(a) (0; 0)
+(b) (10; 10) (c) (6; 6)
+(d) (7; 8)
+
+CODE:
+import math
+a=0
+b=0
+for  i in range(4):
+    x=int(input("Enter x co_ordinate"))
+    y=int(input("Enter y co_ordinate"))
+    d=math.sqrt((x-a)*2 + (y-a)*2)
+    if(d<=10):
+        print("Dart is within the dartboard")
+    else:
+        print("Dart is outside the dart board")
+    print()
+OUTPUT:
+Enter x co_ordinate 0
+Enter y co_ordinate 0
+Dart is within the dartboard
+
+Enter x co_ordinate 10
+Enter y co_ordinate 10
+Dart is within the dartboard
+
+Enter x co_ordinate 6
+Enter y co_ordinate 6
+Dart is within the dartboard
+
+Enter x co_ordinate 7
+Enter y co_ordinate 8
+Dart is within the dartboard
+
+
+
+QUESTION 3:
+ Write Python expressions corresponding to these statements:
+(a)The number of characters in the word "anachronistically" is 1 more than the number of characters
+in the word "counterintuitive."
+(b)The word "misinterpretation" appears earlier in the dictionary than the word "misrep- resentation."
+(c)The letter "e" does not appear in the word "ﬂoccinaucinihilipiliﬁcation."
+(d)The number of characters in the word "counterrevolution" is equal to the sum of the number of
+characters in words "counter" and "resolution
+
+CODE:
+word1="anachronistically"
+word2="counterintuitive"
+print(len(word1)==len(word2)+1)
+word3="misinterpretation"
+word4="misrepresentation"
+print((word3<word4))
+word5="ﬂoccinaucinihilipiliﬁcation"
+print("e" in word5)
+word6="counterrevolution"
+word7="counter"
+word8="resolution"
+print(len(word6)==len(word7)+len(word8)    
+    
+   
+OUTPUT:
+True
+True
+False
+True
+
+
+QUESTION 4:
+Write a program in Python that holds an empty tuple and fill that tuple after taking 
+user input for names of provinces of Pakistan n fill an empty tuple and print.
+      
+CODE:
+  Tupl=()
+l1=list(Tupl)
+print("Enter provinces name")
+for i in range(4):
+    x=input()
+    l1.append(x)
+Tupl=tuple(l1)
+print(Tupl)
+
+      
+OUTPUT:
+ Enter provinces name
+Sindh
+Punjab
+Balochistan
+KPK
+('Sindh', 'Punjab', 'Balochistan', 'KPK')
+
+QUESTION 5:
+  5. Start by assigning to variables monthsL and monthsT a list and a tuple, respectively,
+      both containing strings 'Jan', 'Feb', 'Mar', and 'May', in that order. Then attempt 
+      the following with both containers:
+(a)Insert string 'Apr' between 'Mar' and 'May'. (b)Append string 'Jun'.
+(c)Pop the container.
+(d)Remove the second item in the container. (e)Reverse the order of items in the container.
+Note: when attempting these on tuple monthsT you should expect errors.
+ CODE:
+            # FOR LIST
+      INPUT:
+      
+monthsL=["Jan","Feb","Mar","May"]
+
+monthsL.insert(3,"Apr")
+print(monthsL)
+monthsL.append("Jun")
+print(monthsL)
+monthsL.pop()
+print(monthsL)
+monthsL.remove("Feb")
+print(monthsL)
+monthsL.reverse()
+print(monthsL)
+      
+      
+      OUTPUT:
+['Jan', 'Feb', 'Mar', 'Apr', 'May']
+['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
+['Jan', 'Feb', 'Mar', 'Apr', 'May']
+['Jan', 'Mar', 'Apr', 'May']
+['May', 'Apr', 'Mar', 'Jan']
+  
+ # FOR TUPLE
+      CODE:
+      
+monthsT=("Jan","Feb","Mar","May")
+monthsT.insert(3,"Apr")
+print(monthsT)
+monthsT.append("Jun")
+print(monthsT)
+monthsT.pop()
+print(monthsT)
+monthsT.remove("Feb")
+print(monthsT)
+monthsT.reverse()
+print(monthsT)
+      
+      OUTPUT:
+Traceback (most recent call last):
+  File "C:\Users\computer lab\AppData\Roaming\JetBrains\PyCharmCE2021.3\scratches\scratch_15.py", line 5, in <module>
+    monthsT.insert(3,"Apr")
+AttributeError: 'tuple' object has no attribute 'insert'
+
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # LAB 8 QUESTION 1
 
 # 1.Construct the strings by using the string time format function strftime ()
